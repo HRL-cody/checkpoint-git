@@ -1,0 +1,300 @@
+
+C:\Users\GSI\learn_git_again>git log
+commit 571bd1f88edfb78886bf55665a33358ae86c3492 (HEAD -> master)
+Author: hamouda <hamoudamdemagh@gmail.com>
+Date:   Mon Sep 21 13:59:34 2020 +0200
+
+    adding third.txt
+
+C:\Users\GSI\learn_git_again>touch fourth.txt
+'touch' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\GSI\learn_git_again>git add fourth.txt
+
+C:\Users\GSI\learn_git_again>git Commit-m "adding fourth.txt"
+git: 'Commit-m' is not a git command. See 'git --help'.
+
+C:\Users\GSI\learn_git_again>git Commit-m '"adding fourth.txt"'
+git: 'Commit-m' is not a git command. See 'git --help'.
+
+C:\Users\GSI\learn_git_again>git commit -m "fourth.txt"
+[master 74373fd] fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+C:\Users\GSI\learn_git_again>git rm third.txt
+rm 'third.txt'
+
+C:\Users\GSI\learn_git_again>git add --all
+
+C:\Users\GSI\learn_git_again>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\GSI\learn_git_again>git commit -m "removing third.txt"
+[master b1b39bd] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+C:\Users\GSI\learn_git_again>git log
+commit b1b39bd6bfedcf496f8b8a1ac1a4efe3f05da6e7 (HEAD -> master)
+Author: hamouda <hamoudamdemagh@gmail.com>
+Date:   Mon Sep 21 14:08:09 2020 +0200
+
+    removing third.txt
+
+commit 74373fdfb347fa2f591e9c62ef7ae53bd39b3ef0
+Author: hamouda <hamoudamdemagh@gmail.com>
+Date:   Mon Sep 21 14:04:28 2020 +0200
+
+    fourth.txt
+
+commit 571bd1f88edfb78886bf55665a33358ae86c3492
+Author: hamouda <hamoudamdemagh@gmail.com>
+Date:   Mon Sep 21 13:59:34 2020 +0200
+
+    adding third.txt
+
+C:\Users\GSI\learn_git_again>git commit -m "removing third.txt"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\GSI\learn_git_again>git log
+commit b1b39bd6bfedcf496f8b8a1ac1a4efe3f05da6e7 (HEAD -> master)
+Author: hamouda <hamoudamdemagh@gmail.com>
+Date:   Mon Sep 21 14:08:09 2020 +0200
+
+    removing third.txt
+
+commit 74373fdfb347fa2f591e9c62ef7ae53bd39b3ef0
+Author: hamouda <hamoudamdemagh@gmail.com>
+Date:   Mon Sep 21 14:04:28 2020 +0200
+
+    fourth.txt
+
+commit 571bd1f88edfb78886bf55665a33358ae86c3492
+Author: hamouda <hamoudamdemagh@gmail.com>
+Date:   Mon Sep 21 13:59:34 2020 +0200
+
+    adding third.txt
+
+C:\Users\GSI\learn_git_again>git config --global core.pager ''
+
+C:\Users\GSI\learn_git_again>git config --global core.pager=cat-
+error: invalid key: core.pager=cat-
+
+C:\Users\GSI\learn_git_again>git config --global core.pager=cat
+error: invalid key: core.pager=cat
+
+C:\Users\GSI\learn_git_again>git config --global core.pager=cat-
+error: invalid key: core.pager=cat-
+
+C:\Users\GSI\learn_git_again>git config --global core.pager= 'cat'
+error: invalid key: core.pager=
+
+C:\Users\GSI\learn_git_again>git config --global core.pager ''
+
+C:\Users\GSI\learn_git_again>git config --list --show-origin
+'': : command not found
+
+C:\Users\GSI\learn_git_again>git config --list
+'': : command not found
+
+C:\Users\GSI\learn_git_again> git config --list
+'': : command not found
+
+C:\Users\GSI\learn_git_again>git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_rege
+x]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, com
+mand line)
+    --show-scope          show scope of config (worktree, local, global, system,
+ command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\GSI\learn_git_again> --list
+'--list' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\GSI\learn_git_again>git list
+git: 'list' is not a git command. See 'git --help'.
+
+The most similar commands are
+        bisect
+        rev-list
+
+C:\Users\GSI\learn_git_again>git config --list --show-origin
+'': : command not found
+
+C:\Users\GSI\learn_git_again>git config --list
+'': : command not found
+
+C:\Users\GSI\learn_git_again>git config --list
+'': : command not found
+
+C:\Users\GSI\learn_git_again>git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_rege
+x]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, com
+mand line)
+    --show-scope          show scope of config (worktree, local, global, system,
+ command)
+    --default <value>     with --get, use default value when missing entry
+
+
+C:\Users\GSI\learn_git_again>git config --list
+'': : command not found
+
+C:\Users\GSI\learn_git_again>~/.gitconfig
+'~' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\GSI\learn_git_again>git config --list
+'': : command not found
+
+C:\Users\GSI\learn_git_again>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\GSI\learn_git_again>gitconfig --list
+'gitconfig' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\GSI\learn_git_again>git config --global core.pager=cat
+error: invalid key: core.pager=cat
+
+C:\Users\GSI\learn_git_again>git config --global corepager=cat
+error: key does not contain a section: corepager=cat
+
+C:\Users\GSI\learn_git_again>git config --global corepager=cat-
+error: key does not contain a section: corepager=cat-
+
+C:\Users\GSI\learn_git_again>git config --global --list
+'': : command not found
+
+C:\Users\GSI\learn_git_again>git config --global list
+error: key does not contain a section: list
+
+C:\Users\GSI\learn_git_again>git config --global --list
+'': : command not found
+
+C:\Users\GSI\learn_git_again>git config --global core.pager=cat
+error: invalid key: core.pager=cat
+
+C:\Users\GSI\learn_git_again>git config --global core.pager='cat'
+error: invalid key: core.pager='cat'
+
+C:\Users\GSI\learn_git_again>git config --global core.pager 'cat'
+
+C:\Users\GSI\learn_git_again>gitconfig --list
+'gitconfig' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\GSI\learn_git_again>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\GSI\learn_git_again>git config --list --show-origin
+file:C:/Program Files/Git/etc/gitconfig diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.process=git-lfs filter-proces
+s
+file:C:/Program Files/Git/etc/gitconfig filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig http.sslcainfo=C:/Program Files/Git/ming
+w64/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig core.symlinks=true
+file:C:/Program Files/Git/etc/gitconfig pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig credential.helper=manager
+file:C:/Users/GSI/.gitconfig    user.name=hamouda
+file:C:/Users/GSI/.gitconfig    user.email=hamoudamdemagh@gmail.com
+file:C:/Users/GSI/.gitconfig    core.pager='cat'
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=false
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        core.symlinks=false
+file:.git/config        core.ignorecase=true
+
+C:\Users\GSI\learn_git_again>
